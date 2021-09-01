@@ -15,20 +15,70 @@
   p {
       font-size: 30px;
   }
+  a {
+    font-size: 30px;
+  }
   </style>
 </head>
 <body style="padding: 2% 5% 0% 5%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
   <h1>QuoteBot commands</h1>
   <p>Welcome to the QuoteBot commands page, here you can view all the commands for QuoteBot.</p>
+  <p>QuoteBot's main website is <a href="https://www.quotebot.me" target="_blank">here</a> 
+  and there is a dashboard to adjust QuoteBot's settings and upload sprites <a href="https://dash.quotebot.me/">here.</a></p>
+  <h1>Utility commands</h1>
+
   <h2><code>help</code></h2>
   <p>This is the standard <code>help</code> command for QuoteBot, it you can issue this command to get a list of expressions,
   or you can add on a command to the end of it like <code>help upvote</code> to get more info about the command and how to use
   it.</p>
+
   <h2><code>suggest</code></h2>
   <p>This allows you to suggest features for the bot, you use it like <code>suggest i think quotebot is pog</code>, it does 
-  save your username so I can discuss this with you (if you are in the server, it's not required to be in the server)
+  save your username so I can discuss this with you. (if you are in the server, it's not required to be in the server.)
+
   <h2><code>upvote</code></h2>
   <p>This command shows you how to upvote the bot, this allows you to use color in QuoteBot's textboxes. You can upvote on both
   top.gg and discordbotlist.com to recieve perks, and being in the discord server with more than 5 upvotes gives you a special
-  role! (same applies for 10 upvotes and 20 upvotes)</p>
+  role! (same applies for 10 upvotes and 20 upvotes.)</p>
+
+  <h2><code>downvote</code></h2>
+  <p>No, pls don't :(</p>
+
+  <h2><code>dashboard</code></h2>
+  <p>This will send a link to the dashboard for the current server you are in, the bot will only let you manage the dashboard 
+  if you have <b>manage server</b> permissions in the server.</p>
+
+  <h2><code>debug</code></h2>
+  <p>If QuoteBot is having some issues in a certain server / channel, it may be due to lack of permissions, you can use this command 
+  to see what permissions QuoteBot has for the current channel.</p>
+
+  <h2><code>info</code></h2>
+  <p>Just show some little technical specs for the bot.</p>
+
+  <h1>Quote commands</h1>
+  <p>When you quote a message from a user, there's two ways to determine what message gets quoted by the bot.</p>
+  <p>Traditionally the bot has used a method of saying the users username and then the bot would scroll through messages 
+  to find the most recent thing that was said by that user, this is done by saying <code>quote &lt;user&gt; &lt;character&gt; &lt;expression&gt;</code> 
+  (character and expression are optional), the user can be a ping, username, or user id. (the bot only goes back through the last 30 messages 
+  of a channel, so if the user hasn't said anything for a while it might not work.)</p>
+  <p>Since the recent update, it is now possible to quote messages, by replying to them when you run the quote command, this 
+  lets you quote messages that aren't in the last 30 messages or if the user has said something else since then. (you might need 
+  to change the prefix for this to work, in testing I noticed it didn't work using the default <code>/</code>, I suspect this 
+  is due to discords slash commands.)</p>
+
+  <h2><code>quote</code></h2>
+  <p>By default, an alias for <code>oldquote</code> but can be changed in the dashboard to be <code>newquote</code>.</p>
+
+  <h2><code>oldquote</code></h2>
+  <p>The command to quote messages using <a href="https://twitter.com/Demirramon">Demirramon's</a> textbox generator, this is the default 
+  for the <code>quote</code> command. A list of expressions for that is avaliable <a href="https://www.demirramon.com/en/help/undertale_text_box_generator_dev">here</a>.</p>
+
+  <h2><code>newquote</code><h2>
+  <p>The command to quote message using the sprites on <a href="https://dash.quotebot.me/">dash.quotebot.me</a>.</p>
+
+  <h2><code>listsprites</code></h2>
+  <p>Lists all the sprites for this server that are in the dashboard.</p>
+
+  <h2><code>showsprite</code></h2>
+  <p>Shows a sprite from the dashboard by name, like <code>showsprite &lt;character&gt; &lt;expression&gt;</code>.</p>
 </body>
