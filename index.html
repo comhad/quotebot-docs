@@ -18,6 +18,16 @@
   a {
     font-size: 30px;
   }
+  .responsive-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 70%;
+    border: none;
+}
   </style>
 </head>
 <body style="padding: 2% 5% 0% 5%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
@@ -69,12 +79,12 @@
   to find the most recent thing that was said by that user, this is done by saying <code>quote &lt;user&gt; &lt;character&gt; &lt;expression&gt;</code> 
   (character and expression are optional), the user can be a ping, username, or user id. (the bot only goes back through the last 30 messages 
   of a channel, so if the user hasn't said anything for a while it might not work.)</p>
-  <img src="https://comhad.github.io/img/custom_colors.jpg" height="50%">
+  <img src="https://comhad.github.io/img/custom_colors.jpg" class="responsive-image" style="width : 35%;">
   <p>Since the recent update, it is now possible to quote messages, by replying to them when you run the quote command, this 
   lets you quote messages that aren't in the last 30 messages or if the user has said something else since then. (you might need 
   to change the prefix for this to work, in testing I noticed it didn't work using the default <code>/</code>, I suspect this 
   is due to discords slash commands.)</p>
-  <img src="https://comhad.github.io/img/new_quote.png" height="35%">
+  <img src="https://comhad.github.io/img/new_quote.png" class="responsive-image">
 
   <h2><code>quote</code></h2>
   <p>By default, an alias for <code>oldquote</code> but can be changed in the dashboard to be <code>newquote</code>.</p>
